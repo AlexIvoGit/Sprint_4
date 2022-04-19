@@ -33,7 +33,8 @@ public class AccountTest {
                 {new Account(" Антонов Антон"), false, "Пробел в начале"},
                 {new Account("Антонов Антон "), false, "Пробел в конце"},
                 {new Account("Антонов Антон"), true, "Пробел в середине"},
-                {new Account("Антонов Ан тон"), false, "Несколько пробелов"}
+                {new Account("Антонов Ан тон"), false, "Несколько пробелов"},
+                {new Account(null), false, "Проверка на null"}
         };
     }
 
